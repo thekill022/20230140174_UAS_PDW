@@ -1,7 +1,7 @@
 # Deskripsi
 > Simprak merupakan sistem pengumpulan tugas praktikum yang dirancang untuk memudahkan asisten dalam merekap tugas praktikum mahasisa. Simprak sendiri terdiri dari beberapa fitur diantara dashboard, pengelolaan enrollment, pembuatan modul dan mata praktikum, serta sistem penilaian modul yang disertai feedback. Dari sisi mahasiswa fiturnya terdiri dari pendaftaran mata praktikum, pengumpulan tugas, dan dashboard.
 
-Preview Aplikasi
+# Preview Aplikasi
 
 > Sisi Asisten (Admin)
 ![Screenshot 2025-07-06 103401](https://github.com/user-attachments/assets/f9e7e62d-5ff1-4f8c-aab3-48734c8b5462)
