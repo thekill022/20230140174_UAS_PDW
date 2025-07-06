@@ -1,10 +1,8 @@
 <?php
-// Pastikan session sudah dimulai
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-// Cek jika pengguna belum login
 if (!isset($_SESSION['user_id'])) {
     header("Location: ../login.php");
     exit();
@@ -21,7 +19,8 @@ if (!isset($_SESSION['user_id'])) {
 </head>
 <body class="bg-gray-100 font-sans">
 
-    <nav class="bg-blue-600 shadow-lg">
+<div class="min-h-screen flex flex-col">
+    <nav class="bg-blue-600 shadow-lg sticky top-0">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 
@@ -38,7 +37,7 @@ if (!isset($_SESSION['user_id'])) {
                             <a href="dashboard.php" class="<?php echo ($activePage == 'dashboard') ? $activeClass : $inactiveClass; ?> px-3 py-2 rounded-md text-sm font-medium">Dashboard</a>
                             <a href="my_courses.php" class="<?php echo ($activePage == 'my_courses') ? $activeClass : $inactiveClass; ?> px-3 py-2 rounded-md text-sm font-medium">Praktikum Saya</a>
                             <a href="courses.php" class="<?php echo ($activePage == 'courses') ? $activeClass : $inactiveClass; ?> px-3 py-2 rounded-md text-sm font-medium">Cari Praktikum</a>
-                        </div>
+                        </div>  
                     </div>
                 </div>
 
@@ -54,4 +53,4 @@ if (!isset($_SESSION['user_id'])) {
         </div>
     </nav>
 
-    <div class="container mx-auto p-6 lg:p-8">
+    <main class="flex-1 container mx-auto p-6 lg:p-8">
